@@ -10,3 +10,23 @@ body{
 .container{
     @apply max-w-full w-10/12 mx-auto
 }
+
+.swiper-button-next, .swiper-button-prev{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: black !important;
+    font-size: 21px !important;
+    font-weight: 900;
+}
+
+.bg-space{
+    background-image: url('https://i.ibb.co/gvZJZGM/8791930.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
