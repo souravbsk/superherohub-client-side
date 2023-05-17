@@ -1,6 +1,8 @@
 import React from "react";
 import { GiStarfighter } from "react-icons/gi";
 import { Link } from "react-router-dom";
+import {FiMail, FiMapPin, FiPhoneCall} from "react-icons/fi"
+import {FaGoogle, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -18,6 +20,12 @@ const Footer = () => {
             <br />
             Providing reliable tech since 1992
           </p>
+          <ul className="flex items-center gap-3">
+            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaGoogle></FaGoogle></li></Link>
+            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaTwitter></FaTwitter></li></Link>
+            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaInstagram></FaInstagram></li></Link>
+            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaLinkedin></FaLinkedin></li></Link>
+          </ul>
         </div>
         <div>
           <span className="footer-title">Services</span>
@@ -34,10 +42,20 @@ const Footer = () => {
           <a className="link link-hover">Press kit</a>
         </div>
         <div>
-          <span className="footer-title">Legal</span>
-          <a className="link link-hover">Terms of use</a>
-          <a className="link link-hover">Privacy policy</a>
-          <a className="link link-hover">Cookie policy</a>
+          <ul class="text-white space-y-4">
+            <li class="flex items-center gap-2">
+            <FiMail></FiMail>
+              <Link to="#">testyFood@gamil.com</Link>
+            </li>
+            <li class="flex items-center gap-2">
+              <FiPhoneCall></FiPhoneCall>
+              <Link to="#">+88015525665</Link>
+            </li>
+            <li class="flex items-center gap-2">
+              <FiMapPin></FiMapPin>
+              <Link to="#">32, new polly kishoreganj</Link>
+            </li>
+          </ul>
         </div>
       </footer>
       <div className="text-center text-white pb-5">
