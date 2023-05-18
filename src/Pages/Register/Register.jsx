@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser, updateNamePhoto } = useContext(AuthContext);
@@ -35,6 +36,9 @@ const Register = () => {
   };
   return (
     <div className="">
+      <Helmet>
+        <title>Super Hero Hub | Registration</title>
+      </Helmet>
       <div className="hero py-20 bg-base-200">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">

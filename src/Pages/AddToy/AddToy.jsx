@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const AddToy = () => {
   const { user } = useContext(AuthContext);
@@ -65,12 +66,16 @@ const AddToy = () => {
   };
 
   return (
+    <>
+    <Helmet>
+        <title>Super Hero Hub | Add A Toy</title>
+      </Helmet>
     <div className=" bg-base-200 bg-home py-12">
       <div className="mt-5  container">
         <form
           onSubmit={handleSubmitToy}
           className="bg-white  md:p-10 p-5 rounded-2xl md:w-8/12 mx-auto"
-        >
+          >
           <h1 className="text-xl md:text-3xl mb-5 text-center font-semibold">
             Add a Super Hero Toy
           </h1>
@@ -85,7 +90,7 @@ const AddToy = () => {
                 required
                 placeholder="toy Photo URL"
                 className="input input-bordered"
-              />
+                />
             </div>
             <div className="form-control w-full">
               <label className="label">
@@ -97,7 +102,7 @@ const AddToy = () => {
                 type="text"
                 placeholder="toy name"
                 className="input input-bordered"
-              />
+                />
             </div>
           </div>
           <div className="flex mb-5 gap-6 flex-col md:flex-row items-center justify-between">
@@ -112,7 +117,7 @@ const AddToy = () => {
                 defaultValue={user?.displayName}
                 placeholder="seller name"
                 className="input input-bordered"
-              />
+                />
             </div>
             <div className="form-control w-full">
               <label className="label">
@@ -126,7 +131,7 @@ const AddToy = () => {
                 defaultValue={user?.email}
                 placeholder="seller email"
                 className="input input-bordered"
-              />
+                />
             </div>
           </div>
           <div className="flex mb-5 gap-6 flex-col md:flex-row items-center justify-between">
@@ -156,7 +161,7 @@ const AddToy = () => {
                 min={0}
                 placeholder="Price"
                 className="input input-bordered"
-              />
+                />
             </div>
           </div>
           <div className="flex mb-5 gap-6 flex-col md:flex-row items-center justify-between">
@@ -172,7 +177,7 @@ const AddToy = () => {
                 max={5}
                 placeholder="ratings"
                 className="input input-bordered"
-              />
+                />
             </div>
             <div className="form-control w-full">
               <label className="label">
@@ -198,7 +203,7 @@ const AddToy = () => {
                 required
                 placeholder="details"
                 className="input h-20 pt-5 resize-none input-bordered"
-              ></textarea>
+                ></textarea>
             </div>
           </div>
           <div className="form-control mt-6">
@@ -207,6 +212,7 @@ const AddToy = () => {
         </form>
       </div>
     </div>
+                </>
   );
 };
 

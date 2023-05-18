@@ -38,10 +38,10 @@ text-align: center;
 }
 
 .alltoybg {
-    background-image: url("https://i.ibb.co/hcRdvF4/pngwing-com-11-1.png"), url("https://i.ibb.co/vqQSKcG/pngwing-com-12-1.png");
+    background-image: url("https://i.ibb.co/dWxWbzX/pngwing-com-14-1.png"), url("https://i.ibb.co/vqQSKcG/pngwing-com-12-1.png");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, right top;
-    background-size: 500px 500px, 300px 200px;
+    background-size: 200px 200px, 300px 200px;
 }
 
 .bg-home {
