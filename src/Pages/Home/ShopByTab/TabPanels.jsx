@@ -17,7 +17,7 @@ const TabPanels = ({ hero }) => {
       <div className="card-body ">
         <h2 className="card-title">{toytitle}</h2>
         <p className="font-medium">Price: ${price}</p>
-        <p className="font-medium">Ratings: {ratings}</p>
+        <p className="font-medium">Ratings: ${ratings}</p>
         <div className="card-actions">
           <button className="btn">View Details</button>
         </div>

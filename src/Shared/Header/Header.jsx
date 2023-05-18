@@ -32,7 +32,7 @@ const Header = () => {
               <NavLink className="font-medium">Home</NavLink>
             </li>
             <li>
-              <NavLink className="font-medium">All Toys</NavLink>
+              <NavLink to="all-toys" className="font-medium">All Toys</NavLink>
             </li>
             {user && (
               <>

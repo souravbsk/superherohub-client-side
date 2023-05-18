@@ -65,7 +65,7 @@ const AddToy = () => {
   };
 
   return (
-    <div className=" bg-base-200 py-12">
+    <div className=" bg-base-200 bg-home py-12">
       <div className="mt-5  container">
         <form
           onSubmit={handleSubmitToy}

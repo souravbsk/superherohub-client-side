@@ -3,30 +3,46 @@
 @tailwind utilities;
 
 
-body{
+body {
     font-family: 'Inter', sans-serif;
 }
 
-.container{
+.container {
     @apply max-w-full w-10/12 mx-auto
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     width: 50px !important;
     height: 50px !important;
     border-radius: 50%;
     background-color: azure;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
     color: black !important;
     font-size: 21px !important;
     font-weight: 900;
 }
 
-.bg-space{
+.bg-space {
     background-image: url('https://i.ibb.co/gvZJZGM/8791930.png');
     background-size: contain;
     background-repeat: no-repeat;
 
+}
+
+.alltoybg {
+    background-image: url("https://i.ibb.co/hcRdvF4/pngwing-com-11-1.png"), url("https://i.ibb.co/vqQSKcG/pngwing-com-12-1.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, right top;
+    background-size: 500px 500px, 300px 200px;
+}
+
+.bg-home {
+    background-image: url("https://i.ibb.co/vqQSKcG/pngwing-com-12-1.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 200px 300px;
 }
