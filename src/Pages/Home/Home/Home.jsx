@@ -2,6 +2,7 @@ import React from "react";
 import HeroSlider from "../HeroSlider/HeroSlider";
 import ShopByTab from "../ShopByTab/ShopByTab";
 import { Helmet } from "react-helmet-async";
+import Gallerys from "../Gallerys/Gallerys";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       </Helmet>
       <HeroSlider></HeroSlider>
       <ShopByTab></ShopByTab>
+      <Gallerys></Gallerys>
       <h1>Hello world</h1>
     </div>
   );

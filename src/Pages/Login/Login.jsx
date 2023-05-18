@@ -34,11 +34,11 @@ const Login = () => {
 
   }
   return (
-    <div className="">
+    <div>
       <Helmet>
         <title>Super Hero Hub | Login</title>
       </Helmet>
-      <div className="hero py-20 bg-base-200">
+      <div className="hero bg-login py-20 bg-base-200">
         <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <div className="card-body">
           <h1 className="text-3xl text-center font-bold">Sign In</h1>

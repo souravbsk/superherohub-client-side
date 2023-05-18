@@ -55,5 +55,17 @@ text-align: center;
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 200px 300px;
+}
+.bg-login {
+    background-image: url('https://i.ibb.co/hcRdvF4/pngwing-com-11-1.png'),url("https://i.ibb.co/QKRTpQQ/pngwing-com-13-1.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: left bottom,right;
+    background-size: contain, 300px ;
+}
 
+
+
+.lg-react-element {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
