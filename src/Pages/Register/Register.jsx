@@ -1,12 +1,14 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
+import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
 
 const Register = () => {
   const { createUser, updateNamePhoto } = useContext(AuthContext);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
   const handleSignIn = (e) => {
     e.preventDefault();
     setError("");
@@ -23,16 +25,16 @@ const Register = () => {
           updateNamePhoto(result?.user, name, photo)
             .then(() => {
               toast.success("Welcome to Super Heo Hub");
+              navigate("/",{replace:true})
             })
             .catch((err) => {
-              console.log(err.message);
+              setError(err.message);
             });
         })
         .catch((err) => {
-          console.log(err.message);
+          setError(err.message);
         });
     }
-    console.log(name, email, password, photo);
   };
   return (
     <div className="">
@@ -40,7 +42,7 @@ const Register = () => {
         <title>Super Hero Hub | Registration</title>
       </Helmet>
       <div className="hero py-20 bg-login bg-base-200">
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+        <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
           <div className="card-body">
             <h1 className="text-3xl text-center font-bold">Sign Up</h1>
             <form onSubmit={handleSignIn}>
@@ -105,6 +107,7 @@ const Register = () => {
               </Link>
             </p>
             <p className="text-red-600 text-sm text-center">{error}</p>
+          <SocialLogin from="/"></SocialLogin>
           </div>
         </div>
       </div>

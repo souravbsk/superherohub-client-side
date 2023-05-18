@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const HeroCard = ({ hero }) => {
-  console.log(hero);
   const {photo,toytitle,price,sellername,_id,category,quantity} = hero;
 
   return (

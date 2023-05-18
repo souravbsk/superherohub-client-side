@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
 import app from '../utilites/firebase.init';
-import {GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile} from "firebase/auth"
+import {GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile} from "firebase/auth"
 
 export const AuthContext = createContext();
 const auth = getAuth(app)
@@ -50,6 +50,12 @@ useEffect(() => {
 
 console.log(user);
 
+
+//forget pass
+const forgetPass = (email) => {
+    return sendPasswordResetEmail(auth,email)
+}
+
 //log out
 
 const logOut = () => {
@@ -63,7 +69,8 @@ const logOut = () => {
         updateNamePhoto,
         loginUser,
         loginWithGoogle,
-        logOut
+        logOut,
+        forgetPass
 
     }
 

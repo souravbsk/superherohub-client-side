@@ -1,11 +1,13 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
+import SocialLogin from "../../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
-  const {loginUser} = useContext(AuthContext)
+  const {loginUser,forgetPass} = useContext(AuthContext);
+  const userEmail = useRef(null);
   const [error,setError] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
@@ -28,10 +30,26 @@ const Login = () => {
 
       })
       .catch(err => {
-        console.log(err.message);
+        setError(err.message);
       })
     }
 
+  }
+
+
+  const handleForgetPass = () => {
+    const email = userEmail.current.value;
+    if(!email){
+      toast.error("please enter your Email")
+      return
+    }
+    forgetPass(email)
+    .then(() => {
+      toast.success("please check your mail for reset link")
+    })
+    .catch((err) => {
+      setError(err.message)
+    })
   }
   return (
     <div>
@@ -51,6 +69,7 @@ const Login = () => {
                   type="email"
                   name="email"
                   required
+                  ref={userEmail}
                   placeholder="email"
                   className="input input-bordered"
                 />
@@ -67,9 +86,9 @@ const Login = () => {
                   className="input input-bordered"
                 />
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
+                  <button type="button" onClick={handleForgetPass} className="label-text-alt link link-hover">
                     Forgot password?
-                  </a>
+                  </button>
                 </label>
               </div>
               <div className="form-control mt-6">
@@ -80,6 +99,7 @@ const Login = () => {
             </form>
             <p className="text-center mt-3 text-sm">Create A New Account? <Link className="underline" to="/register">Register</Link></p>
             <p className="text-red-600 text-sm text-center">{error}</p>
+          <SocialLogin from={from}></SocialLogin>
           </div>
         </div>
       </div>
