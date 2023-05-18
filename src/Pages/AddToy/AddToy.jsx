@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
 const AddToy = () => {
   const { user } = useContext(AuthContext);
@@ -42,6 +43,24 @@ const AddToy = () => {
       quantity,
       details,
     };
+
+    fetch('http://localhost:5000/alltoys',{
+      method:"POST",
+      headers:{
+        'content-type':"application/json"
+      },
+      body:JSON.stringify(newToy)
+    })
+    .then(res => res.json())
+    .then(data => {
+      if(data.insertedId){
+        toast.success("toy insert success")
+        form.reset()
+      }
+      console.log(data);
+    })    
+
+
     console.log(newToy);
   };
 

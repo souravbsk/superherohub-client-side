@@ -42,16 +42,16 @@ const Footer = () => {
           <a className="link link-hover">Press kit</a>
         </div>
         <div>
-          <ul class="text-white space-y-4">
-            <li class="flex items-center gap-2">
+          <ul className="text-white space-y-4">
+            <li className="flex items-center gap-2">
             <FiMail></FiMail>
               <Link to="#">testyFood@gamil.com</Link>
             </li>
-            <li class="flex items-center gap-2">
+            <li className="flex items-center gap-2">
               <FiPhoneCall></FiPhoneCall>
               <Link to="#">+88015525665</Link>
             </li>
-            <li class="flex items-center gap-2">
+            <li className="flex items-center gap-2">
               <FiMapPin></FiMapPin>
               <Link to="#">32, new polly kishoreganj</Link>
             </li>
