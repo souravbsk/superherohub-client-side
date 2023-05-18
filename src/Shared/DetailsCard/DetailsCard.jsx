@@ -38,7 +38,6 @@ const DetailsCard = () => {
               <p className="text-gray-600">Email: {sellermail}</p>
               <p className="text-gray-600">Price: ${price}</p>
               <p className="text-gray-600">category: ${category}</p>
-
               <div className="text-gray-600 flex items-center gap-1">
                 Rating:{" "}
                 <Rating style={{ maxWidth: 100 }} value={ratings} readOnly />{" "}

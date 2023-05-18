@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { Helmet } from "react-helmet-async";
@@ -7,6 +7,9 @@ import { Helmet } from "react-helmet-async";
 const Login = () => {
   const {loginUser} = useContext(AuthContext)
   const [error,setError] = useState("");
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location?.state?.from?.pathname || "/"
   const handleSignIn = e => {
     e.preventDefault()
     setError("")
@@ -18,7 +21,9 @@ const Login = () => {
       loginUser(email,password)
       .then(result => {
         const user = result?.user;
+        navigate(from,{replace:true})
         form.reset()
+
         toast.success("WelCome To Super Hero Hub")
 
       })
