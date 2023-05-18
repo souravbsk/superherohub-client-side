@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const TabPanels = ({ hero }) => {
+const HeroCard = ({ hero }) => {
   console.log(hero);
   const {photo,toytitle,price,ratings,_id} = hero;
 
@@ -19,11 +20,11 @@ const TabPanels = ({ hero }) => {
         <p className="font-medium">Price: ${price}</p>
         <p className="font-medium">Ratings: ${ratings}</p>
         <div className="card-actions">
-          <button className="btn">View Details</button>
+          <Link to={`/toy/${_id}`}><button  className="btn">View Details</button></Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default TabPanels;
+export default HeroCard;

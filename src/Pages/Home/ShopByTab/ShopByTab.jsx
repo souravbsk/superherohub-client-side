@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import TabPanels from "./TabPanels";
+import HeroCard from "./HeroCard";
 
 const ShopByTab = () => {
   const [tabIndex, setTabIndex] = useState(0);
@@ -66,21 +66,21 @@ const ShopByTab = () => {
             <TabPanel>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
-                  <TabPanels key={hero} hero={hero}></TabPanels>
+                  <HeroCard key={hero} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>
             <TabPanel>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
-                  <TabPanels key={hero} hero={hero}></TabPanels>
+                  <HeroCard key={hero} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>
             <TabPanel>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
-                  <TabPanels key={hero} hero={hero}></TabPanels>
+                  <HeroCard key={hero} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>

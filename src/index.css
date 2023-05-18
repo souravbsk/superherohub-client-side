@@ -33,6 +33,10 @@ body {
 
 }
 
+.react-tabs__tab-list{
+text-align: center;
+}
+
 .alltoybg {
     background-image: url("https://i.ibb.co/hcRdvF4/pngwing-com-11-1.png"), url("https://i.ibb.co/vqQSKcG/pngwing-com-12-1.png");
     background-repeat: no-repeat, no-repeat;
@@ -45,4 +49,11 @@ body {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 200px 300px;
+}
+.bg-details-card {
+    background-image: url('https://i.ibb.co/8Y12ngH/pngwing-com-15-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 200px 300px;
+
 }

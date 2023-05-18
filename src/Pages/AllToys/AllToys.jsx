@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import TabPanels from "../Home/ShopByTab/TabPanels";
+import HeroCard from "../Home/ShopByTab/HeroCard";
 
 const AllToys = () => {
     const allHeros = useLoaderData();
@@ -16,7 +16,7 @@ const AllToys = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8
         ">
         {
-            allHeros.map(hero => <TabPanels key={hero._id} hero={hero}></TabPanels>)
+            allHeros.map(hero => <HeroCard key={hero._id} hero={hero}></HeroCard>)
         }
         </div>
       </div>
