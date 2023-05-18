@@ -26,38 +26,40 @@ const ShopByTab = () => {
       </div>
       <div>
         <Tabs>
-          <TabList>
-            <Tab>
-              <button
-                className={`border-2 rounded-md py-3 px-4 ${
-                  tabTitle === "avengers" && "btn"
-                }`}
-                onClick={() => setTabTitle("avengers")}
-              >
-                Avengers
-              </button>
-            </Tab>
-            <Tab>
-              <button
-                className={`border-2 rounded-md py-3 px-4 ${
-                  tabTitle === "justice-league" && "btn"
-                }`}
-                onClick={() => setTabTitle("justice-league")}
-              >
-                Justice League{" "}
-              </button>
-            </Tab>
-            <Tab>
-              <button
-                className={`border-2 rounded-md py-3 px-4 ${
-                  tabTitle === "star-wars" && "btn"
-                }`}
-                onClick={() => setTabTitle("star-wars")}
-              >
-                Star Wars
-              </button>
-            </Tab>
-          </TabList>
+          <div className="mb-8">
+            <TabList>
+              <Tab>
+                <button
+                  className={`border-2 rounded-md py-3 px-4 ${
+                    tabTitle === "avengers" && "btn"
+                  }`}
+                  onClick={() => setTabTitle("avengers")}
+                >
+                  Avengers
+                </button>
+              </Tab>
+              <Tab>
+                <button
+                  className={`border-2 rounded-md py-3 px-4 ${
+                    tabTitle === "justice-league" && "btn"
+                  }`}
+                  onClick={() => setTabTitle("justice-league")}
+                >
+                  Justice League{" "}
+                </button>
+              </Tab>
+              <Tab>
+                <button
+                  className={`border-2 rounded-md py-3 px-4 ${
+                    tabTitle === "star-wars" && "btn"
+                  }`}
+                  onClick={() => setTabTitle("star-wars")}
+                >
+                  Star Wars
+                </button>
+              </Tab>
+            </TabList>
+          </div>
           <TabPanel>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {heros.map((hero) => (
