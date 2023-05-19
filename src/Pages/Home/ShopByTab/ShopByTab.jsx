@@ -21,7 +21,7 @@ const ShopByTab = () => {
     <div data-aos="flip-down" className="bg-home">
       <div className="md:mt-32 mt-20 container">
         <div className="mb-8">
-          <h1 className="text-center text-xl md:text-3xl font-semibold">
+          <h1 className="text-center text-white text-xl md:text-3xl font-semibold">
             Shop By Category
           </h1>
         </div>

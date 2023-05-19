@@ -12,7 +12,7 @@ const Home = () => {
   AOS.init();
 
   return (
-    <div className="overflow-hidden bg-base-300">
+    <div className="overflow-hidden ">
       <Helmet>
         <title>Super Hero Hub | Home</title>
       </Helmet>

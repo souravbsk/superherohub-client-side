@@ -5,9 +5,9 @@ const CountDown = () => {
     <div className="mx-8">
       <div
         data-aos="flip-up"
-        className="container rounded-2xl relative z-50 text-white bg-gray-800"
+        className="container rounded-2xl relative z-50 border mt-20  md:-mt-32 text-white bg-transparent backdrop-blur-2xl"
       >
-        <div className=" grid md:mx-0 md:grid-cols-3 mt-20  md:-mt-32 gap-8 p-20">
+        <div className=" grid md:mx-0 md:grid-cols-3  gap-8 p-20">
           <div className="flex flex-col md:flex-row justify-center md:items-center gap-3 ">
             <img
               className="w-20 h-20"

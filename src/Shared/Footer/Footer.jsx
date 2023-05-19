@@ -6,8 +6,9 @@ import {FaGoogle, FaInstagram, FaLinkedin, FaTwitter} from "react-icons/fa"
 
 const Footer = () => {
   return (
-    <div className=" bg-black ">
-      <footer className="footer py-28 container text-white">
+    <div className="">
+     <div className=" border-t border-b py-20">
+     <footer className="footer container text-white">
         <div>
           <Link className="normal-case text-xl">
             <p className="text-5xl">
@@ -21,10 +22,10 @@ const Footer = () => {
             Providing reliable tech since 1992
           </p>
           <ul className="flex items-center gap-3">
-            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaGoogle></FaGoogle></li></Link>
-            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaTwitter></FaTwitter></li></Link>
-            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaInstagram></FaInstagram></li></Link>
-            <Link><li className="px-3 rounded-full py-3 bg-gray-800 "><FaLinkedin></FaLinkedin></li></Link>
+            <Link><li className="px-3 rounded-full py-3 glass "><FaGoogle></FaGoogle></li></Link>
+            <Link><li className="px-3 rounded-full py-3 glass "><FaTwitter></FaTwitter></li></Link>
+            <Link><li className="px-3 rounded-full py-3 glass "><FaInstagram></FaInstagram></li></Link>
+            <Link><li className="px-3 rounded-full py-3 glass "><FaLinkedin></FaLinkedin></li></Link>
           </ul>
         </div>
         <div>
@@ -57,7 +58,8 @@ const Footer = () => {
           </ul>
         </div>
       </footer>
-      <div className="text-center text-white pb-5">
+     </div>
+      <div className="text-center  text-white py-5">
         <p>Copyright © 2023 - All right reserved by Super Hero Hub || sourav bsk</p>
       </div>
     </div>

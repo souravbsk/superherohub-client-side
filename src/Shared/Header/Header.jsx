@@ -18,11 +18,11 @@ const Header = () => {
   };
 
   return (
-    <header className="border-b-2 shadow-md">
-      <div className="navbar flex-col md:flex-row  md:py-9 container bg-base-100">
+    <header className="border-b-2 shadow-2xl">
+      <div className="navbar flex-col  md:flex-row  md:py-9 container ">
         <div className="flex-1 w-full">
-          <div className="flex justify-between w-full">
-            <Link className="md:btn flex-col md:flex-row flex btn-ghost normal-case text-xl">
+          <div className="flex text-white justify-between w-full">
+            <Link className="md:btn  flex-col md:flex-row flex btn-ghost normal-case text-xl">
               <p className="text-5xl">
                 <GiStarfighter></GiStarfighter>
               </p>
@@ -33,8 +33,8 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <div className="flex-none">
-          <ul className={`flex flex-col md:flex-row items-center md:static p-10 md:p-0 top-24 z-50 duration-300 bg-white absolute gap-6 ${isOpen ? "left-0" : "-left-96"}`}>
+
+          <ul className={`flex h-screen md:h-auto md:text-white flex-col md:flex-row items-center md:static p-10 md:p-0 top-24 z-50 duration-300 bg-white lg:bg-transparent absolute gap-6 ${isOpen ? "left-0" : "-left-96"}`}>
             <li>
               <NavLink className="font-medium">Home</NavLink>
             </li>
@@ -90,7 +90,7 @@ const Header = () => {
               </li>
             )}
           </ul>
-        </div>
+
       </div>
     </header>
   );

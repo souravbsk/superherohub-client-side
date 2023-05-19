@@ -73,19 +73,19 @@ const AddToy = () => {
     <Helmet>
         <title>Super Hero Hub | Add A Toy</title>
       </Helmet>
-    <div className=" bg-base-300 bg-category bg-home py-12">
+    <div className="bg-category bg-home py-12">
       <div className="mt-5  container">
         <form
           onSubmit={handleSubmitToy}
-          className="bg-white  md:p-10 p-5 rounded-2xl md:w-8/12 mx-auto"
+          className="bg-transparent border glass shadow-xl backdrop-blur-3xl  md:p-10 p-5 rounded-2xl md:w-8/12 mx-auto"
           >
-          <h1 className="text-xl md:text-3xl mb-5 text-center font-semibold">
+          <h1 className="text-xl md:text-3xl text-white mb-5 text-center font-semibold">
             Add a Super Hero Toy
           </h1>
           <div className="flex mb-5 gap-6 flex-col md:flex-row items-center justify-between">
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Toy Photo URL</span>
+                <span className="label-text text-white">Toy Photo URL</span>
               </label>
               <input
                 name="photo"
@@ -97,7 +97,7 @@ const AddToy = () => {
             </div>
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Toy Name</span>
+                <span className="label-text text-white">Toy Name</span>
               </label>
               <input
                 name="toytitle"
@@ -111,7 +111,7 @@ const AddToy = () => {
           <div className="flex mb-5 gap-6 flex-col md:flex-row items-center justify-between">
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Seller Name</span>
+                <span className="label-text text-white">Seller Name</span>
               </label>
               <input
                 name="sellername"
@@ -124,7 +124,7 @@ const AddToy = () => {
             </div>
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Seller Email</span>
+                <span className="label-text text-white">Seller Email</span>
               </label>
               <input
                 readOnly
@@ -140,7 +140,7 @@ const AddToy = () => {
           <div className="flex mb-5 gap-6 flex-col md:flex-row items-center justify-between">
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Sub-Category</span>
+                <span className="label-text text-white">Sub-Category</span>
               </label>
               <select
                 required
@@ -155,7 +155,7 @@ const AddToy = () => {
             </div>
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Price</span>
+                <span className="label-text text-white">Price</span>
               </label>
               <input
                 name="price"
@@ -170,7 +170,7 @@ const AddToy = () => {
           <div className="flex mb-5 gap-6 flex-col md:flex-row items-center justify-between">
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Ratings</span>
+                <span className="label-text text-white">Ratings</span>
               </label>
               <input
                 name="ratings"
@@ -184,7 +184,7 @@ const AddToy = () => {
             </div>
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Quantity</span>
+                <span className="label-text text-white">Quantity</span>
               </label>
               <input
                 name="quantity"
@@ -199,7 +199,7 @@ const AddToy = () => {
           <div className=" mb-5 ">
             <div className="form-control w-full">
               <label className="label">
-                <span className="label-text">Details</span>
+                <span className="label-text text-white">Details</span>
               </label>
               <textarea
                 name="details"

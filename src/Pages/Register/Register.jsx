@@ -41,14 +41,14 @@ const Register = () => {
       <Helmet>
         <title>Super Hero Hub | Registration</title>
       </Helmet>
-      <div className="hero py-12 md:py-20 bg-login bg-base-200">
-        <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
+      <div className="hero py-12 md:py-20 bg-login">
+        <div className="card flex-shrink-0 w-full max-w-md shadow-2xl backdrop-blur-3xl border">
           <div className="card-body">
-            <h1 className="text-3xl text-center font-bold">Sign Up</h1>
+            <h1 className="text-3xl text-center font-bold text-white">Sign Up</h1>
             <form onSubmit={handleSignIn}>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Name</span>
+                  <span className="label-text text-white">Name</span>
                 </label>
                 <input
                   name="name"
@@ -60,7 +60,7 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-white">Email</span>
                 </label>
                 <input
                   name="email"
@@ -72,7 +72,7 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-white">Password</span>
                 </label>
                 <input
                   name="password"
@@ -84,7 +84,7 @@ const Register = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Photo URL</span>
+                  <span className="label-text text-white">Photo URL</span>
                 </label>
                 <input
                   type="text"
@@ -100,7 +100,7 @@ const Register = () => {
                 </button>
               </div>
             </form>
-            <p className="text-sm text-center mt-3">
+            <p className="text-sm text-white text-center mt-3">
               Already Have an Account ?{" "}
               <Link className="underline" to="/login">
                 Login

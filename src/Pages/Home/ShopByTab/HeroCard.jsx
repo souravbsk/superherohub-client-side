@@ -19,13 +19,13 @@ const HeroCard = ({ hero }) => {
     }
   }
   return (
-    <div className="card bg-base-100 shadow-xl">
-      <figure className="px-10 pt-10">
+    <div className="card text-white glass shadow-xl">
+      <figure className="px-10  pt-10">
         <img
         
           src={photo}
           alt="Shoes"
-          className="rounded-xl h-52 object-fill w-full"
+          className="rounded-xl h-52 backdrop-blur-2xl object-fill w-full"
         />
       </figure>
       <div className="card-body ">

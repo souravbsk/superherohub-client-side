@@ -47,9 +47,9 @@ const MyToyRow = ({ toy,handleDelete }) => {
       readOnly
     /></td>
       <td>
-       <div>
-         <Link to={`/updatetoy/${_id}`}><button  className="btn w-10 h-10 text-lg mr-3 btn-circle btn-xs"><FaEdit></FaEdit></button></Link>
-        <button onClick={() => handleDelete(_id)} className="btn w-10 h-10 text-lg  btn-circle btn-xs"><FaTrashAlt></FaTrashAlt></button>
+       <div className="flex items-center">
+         <Link to={`/updatetoy/${_id}`}><button  className=" bg-gradient-to-r text-white from-purple-400 shadow-xl to-indigo-500 flex items-center justify-center w-10 h-10 text-lg mr-3 btn-circle btn-xs"><FaEdit></FaEdit></button></Link>
+        <button onClick={() => handleDelete(_id)} className="bg-gradient-to-r text-white from-purple-400 shadow-xl to-indigo-500 flex items-center justify-center w-10 h-10 text-lg mr-3 btn-circle btn-xs"><FaTrashAlt></FaTrashAlt></button>
        </div>
       </td>
     </tr>

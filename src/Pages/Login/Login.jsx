@@ -56,14 +56,14 @@ const Login = () => {
       <Helmet>
         <title>Super Hero Hub | Login</title>
       </Helmet>
-      <div className="hero bg-login py-12 md:py-20 bg-base-200">
-        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+      <div className="hero bg-login py-12 md:py-20 ">
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl backdrop-blur-3xl border">
           <div className="card-body">
-          <h1 className="text-3xl text-center font-bold">Sign In</h1>
+          <h1 className="text-3xl text-center font-bold text-white">Sign In</h1>
             <form onSubmit={handleSignIn}>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email</span>
+                  <span className="label-text text-white ">Email</span>
                 </label>
                 <input
                   type="email"
@@ -76,7 +76,7 @@ const Login = () => {
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text text-white ">Password</span>
                 </label>
                 <input
                   type="password"
@@ -86,18 +86,18 @@ const Login = () => {
                   className="input input-bordered"
                 />
                 <label className="label">
-                  <button type="button" onClick={handleForgetPass} className="label-text-alt link link-hover">
+                  <button type="button" onClick={handleForgetPass} className="label-text text-white  link link-hover">
                     Forgot password?
                   </button>
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-black hover:bg-gray-900 btn-primary">
+                <button className="btn  btn-primary">
                   Login
                 </button>
               </div>
             </form>
-            <p className="text-center mt-3 text-sm">Create A New Account? <Link className="underline" to="/register">Register</Link></p>
+            <p className="text-center mt-3 text-white text-sm">Create A New Account? <Link className="underline" to="/register">Register</Link></p>
             <p className="text-red-600 text-sm text-center">{error}</p>
           <SocialLogin from={from}></SocialLogin>
           </div>

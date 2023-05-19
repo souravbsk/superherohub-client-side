@@ -19,10 +19,10 @@ const SocialLogin = ({from}) => {
         })
     }
   return (
-    <div>
+    <div className="text-white">
       <div className="divider">OR</div>
-      <div className="text-center">
-        <button onClick={handleGoogleSignIn} className="btn btn-circle btn-outline">
+      <div className="text-center flex justify-center">
+        <button onClick={handleGoogleSignIn} className="backdrop-blur-3xl border-2 border-white flex items-center justify-center btn-circle btn-outline">
           <FcGoogle className="text-3xl"></FcGoogle>
         </button>
       </div>

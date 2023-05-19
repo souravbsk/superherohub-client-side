@@ -10,13 +10,13 @@ const Appointment = () => {
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
      data-aos-duration="500" className="text-center  flex-1 lg:text-left">
-            <h4 className="text-xl mb-2 md:mb-5 font-medium text-gray-600">
+            <h4 className="text-xl mb-2 md:mb-5 font-medium text-gray-200">
               Make Appointment
             </h4>
-            <h4 className="md:text-5xl  text-gray-600">
+            <h4 className="md:text-5xl font-semibold text-white">
               Join Our Fun with Cutie Kids
             </h4>
-            <p className=" py-2 md:py-6">
+            <p className=" py-2 md:py-6 text-white">
               Formulate innovative web-readiness and installed base ideas.
               Distinctively integrate high-payoff paradigms without next
               generation systems disseminate holistic e-services through
@@ -28,7 +28,7 @@ const Appointment = () => {
           </div>
           <div data-aos="fade-right"
      data-aos-offset="300"
-     data-aos-easing="ease-in-sine" className="card flex-1 w-full shadow-2xl bg-base-100">
+     data-aos-easing="ease-in-sine" className="card bg-transparent glass flex-1 w-full shadow-2xl bg-base-100">
             <div className="card-body">
               <div className="flex flex-col md:flex-row  items-center gap-2">
                 <div className="form-control w-full">

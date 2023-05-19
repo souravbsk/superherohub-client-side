@@ -46,13 +46,13 @@ console.log(sortValue);
   };
 
   return (
-    <div className="bg-my-toy bg-base-300">
+    <div className="bg-my-toy">
       <Helmet>
         <title>Super Hero Hub | My Toys</title>
       </Helmet>
       <div className="container py-8 md:py-12">
         <div className="mb-8">
-          <h1 className="text-center text-xl md:text-3xl font-semibold">My Toys</h1>
+          <h1 className="text-center text-xl md:text-3xl text-white font-semibold">My Toys</h1>
         </div>
         <select onChange={(e) => setSortValue(e.target.value)} className="select select-bordered w-40 max-w-xs">
             <option value="lth">Low to High</option>

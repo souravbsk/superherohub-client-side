@@ -35,13 +35,22 @@ body {
 
 .react-tabs__tab-list{
 text-align: center;
+gap: 2px;
+flex-direction: row;
+display: flex;
+justify-content:  center;
+align-items: center;
+}
+.react-tabs__tab--selected{
+    background-color: transparent !important;
 }
 
 .react-tabs__tab{
-background-color: white !important;
+
 margin-right: 5px;
-border-radius: 8px 8px 0  0;
+border: 0 !important;
 padding: 0 !important;
+color: white;
 }
 
 
@@ -99,6 +108,20 @@ padding: 0 !important;
     gap: 26px;
 }
 
+.bg-layout{
+    background-image:  linear-gradient(to right, rgba(113, 100, 113, 0.538) , rgba(151, 171, 187, 0.349)), url('./assets//bg-shape//body-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn{
+    @apply bg-gradient-to-r px-10 from-purple-400 shadow-xl to-indigo-500 rounded-3xl  rounded-bl-none rounded-tr-none
+}
+
+.divider:before, .divider:after{
+    background-color: white;
+}
 @media only screen and (max-width: 425px){
 	.lg-react-element {
       
@@ -118,6 +141,9 @@ padding: 0 !important;
     }
     .bg-home{
         background-size: 100px 100px;
+    }
+    .react-tabs__tab-list{
+        flex-direction: column;
     }
     
 }
