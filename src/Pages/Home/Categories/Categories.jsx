@@ -2,9 +2,9 @@ import React from "react";
 
 const Categories = () => {
   return (
-    <div data-aos="fade-up" className=" bg-category mt-8 md:mt-32 ">
+    <div data-aos="fade-up" className=" bg-category mt-20 md:mt-32 ">
          <div className="mb-20">
-        <h1 className="text-center text-3xl font-semibold">Our Categories</h1>
+        <h1 className="text-center text-xl md:text-3xl font-semibold">Our Categories</h1>
       </div>
       <div className="grid container grid-cols-1 md:grid-cols-3 gap-8">
         <div className="card group relative overflow-hidden  bg-gray-600 shadow-2xl border-4 ">

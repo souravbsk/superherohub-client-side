@@ -48,7 +48,6 @@ useEffect(() => {
     }
 },[])
 
-console.log(user);
 
 
 //forget pass

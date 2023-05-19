@@ -80,7 +80,7 @@ border-radius: 8px 8px 0  0;
 .bg-my-toy{
     background-image: url("https://i.ibb.co/8Y12ngH/pngwing-com-15-1.png"), url("https://i.ibb.co/QKRTpQQ/pngwing-com-13-1.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: top left, right bottom;
+    background-position: top left, right top;
     background-size: 250px 300px, 300px 400px;
 }
 
@@ -103,6 +103,20 @@ border-radius: 8px 8px 0  0;
       
         grid-template-columns: repeat(1,1fr);
         gap: 26px;
+    }
+    .alltoybg{
+        background-size: 80px 100px, 100px 100px;
+
+    }
+    .bg-my-toy{
+        background-size: 120px 200px, 80px 120px;
+    }
+    .bg-category {
+       
+        background-size: 100px 100px;
+    }
+    .bg-home{
+        background-size: 100px 100px;
     }
     
 }

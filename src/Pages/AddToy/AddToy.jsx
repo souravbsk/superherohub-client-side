@@ -45,7 +45,7 @@ const AddToy = () => {
       details,
     };
 
-    fetch('http://localhost:5000/alltoys',{
+    fetch('https://superheros-server.vercel.app/alltoys',{
       method:"POST",
       headers:{
         'content-type':"application/json"

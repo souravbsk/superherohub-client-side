@@ -36,13 +36,13 @@ const router = createBrowserRouter([
             {
                 path:"/toy/:id",
                 element: <PrivateRouter><DetailsCard></DetailsCard></PrivateRouter>,
-                loader:({params}) => fetch(`http://localhost:5000/toydetails/${params.id}`),
+                loader:({params}) => fetch(`https://superheros-server.vercel.app/toydetails/${params.id}`),
                 
             },
             {
                 path:"/updatetoy/:id",
                 element:<UpdateToy></UpdateToy>,
-                loader:({params}) => fetch(`http://localhost:5000/toydetails/${params.id}`),
+                loader:({params}) => fetch(`https://superheros-server.vercel.app/toydetails/${params.id}`),
             },
             {
                 path:"/login",

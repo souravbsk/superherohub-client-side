@@ -28,11 +28,11 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <span className="footer-title">Services</span>
-          <a className="link link-hover">Branding</a>
-          <a className="link link-hover">Design</a>
-          <a className="link link-hover">Marketing</a>
-          <a className="link link-hover">Advertisement</a>
+          <span className="footer-title">Heros</span>
+          <a className="link link-hover">Avengers</a>
+          <a className="link link-hover">Cosmic</a>
+          <a className="link link-hover">Ben 10</a>
+          <a className="link link-hover">Star Wars</a>
         </div>
         <div>
           <span className="footer-title">NavLink</span>
@@ -58,7 +58,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="text-center text-white pb-5">
-        <p>Copyright © 2023 - All right reserved by Super Hero Hub</p>
+        <p>Copyright © 2023 - All right reserved by Super Hero Hub || sourav bsk</p>
       </div>
     </div>
   );

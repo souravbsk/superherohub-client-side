@@ -9,7 +9,7 @@ const MyToys = () => {
   const [toys, setToys] = useState();
   const [sortValue,setSortValue] = useState("lth")
 console.log(sortValue);
-  const url = `http://localhost:5000/usertoys/${sortValue}/?email=${user?.email}`;
+  const url = `https://superheros-server.vercel.app/usertoys/${sortValue}/?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -30,7 +30,7 @@ console.log(sortValue);
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/toydetails/${id}/?email=${user?.email}`, {
+        fetch(`https://superheros-server.vercel.app/toydetails/${id}/?email=${user?.email}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -52,7 +52,7 @@ console.log(sortValue);
       </Helmet>
       <div className="container py-8 md:py-12">
         <div className="mb-8">
-          <h1 className="text-center text-3xl font-semibold">My Toys</h1>
+          <h1 className="text-center text-xl md:text-3xl font-semibold">My Toys</h1>
         </div>
         <select onChange={(e) => setSortValue(e.target.value)} className="select select-bordered w-40 max-w-xs">
             <option value="lth">Low to High</option>

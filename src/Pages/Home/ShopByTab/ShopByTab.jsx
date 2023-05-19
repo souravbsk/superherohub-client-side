@@ -8,11 +8,10 @@ const ShopByTab = () => {
   const [tabTitle, setTabTitle] = useState("avengers");
   const [heros, setHeros] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/alltoys/${tabTitle}`)
+    fetch(`https://superheros-server.vercel.app/alltoys/${tabTitle}`)
       .then((res) => res.json())
       .then((data) => {
         if (data) {
-          console.log(data);
           setHeros(data);
         }
       });
@@ -22,7 +21,7 @@ const ShopByTab = () => {
     <div data-aos="flip-down" className="bg-home">
       <div className="md:mt-32 mt-20 container">
         <div className="mb-8">
-          <h1 className="text-center text-3xl font-semibold">
+          <h1 className="text-center text-xl md:text-3xl font-semibold">
             Shop By Category
           </h1>
         </div>

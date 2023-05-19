@@ -2,8 +2,8 @@ import React from "react";
 
 const Appointment = () => {
   return (
-    <div className="bg-details-card ">
-        <div className="md:mt-32 container mt-12">
+    <div className="bg-details-card mb-20 md:mb-32">
+        <div className="md:mt-32 mt-20 container ">
       <div className=" ">
         <div className="hero-content gap-12 md:gap-20 flex-col lg:flex-row-reverse">
           <div data-aos="fade-left"

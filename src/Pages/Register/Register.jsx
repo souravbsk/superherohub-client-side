@@ -41,7 +41,7 @@ const Register = () => {
       <Helmet>
         <title>Super Hero Hub | Registration</title>
       </Helmet>
-      <div className="hero py-20 bg-login bg-base-200">
+      <div className="hero py-12 md:py-20 bg-login bg-base-200">
         <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
           <div className="card-body">
             <h1 className="text-3xl text-center font-bold">Sign Up</h1>

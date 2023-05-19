@@ -12,11 +12,11 @@ import lgZoom from "lightgallery/plugins/zoom";
 const Gallerys = () => {
   const onBeforeSlide = (detail) => {
     const { index, prevIndex } = detail;
-    console.log(index, prevIndex);
+
   };
   return (
     <div data-aos="fade-down" className="bg-galley">
-      <div className="mt-32 container">
+      <div className="md:mt-32 mt-20 container">
         <div className="mb-8">
           <h1 className="text-center text-3xl font-semibold">
             Our Heros Gallery
