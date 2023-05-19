@@ -35,11 +35,10 @@ const Footer = () => {
           <a className="link link-hover">Advertisement</a>
         </div>
         <div>
-          <span className="footer-title">Company</span>
+          <span className="footer-title">NavLink</span>
+          <a className="link link-hover">All Heros</a>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
         </div>
         <div>
           <ul className="text-white space-y-4">

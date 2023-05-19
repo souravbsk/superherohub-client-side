@@ -19,8 +19,8 @@ const ShopByTab = () => {
   }, [tabTitle]);
 
   return (
-    <div className="bg-home">
-      <div className="mt-32 container">
+    <div data-aos="flip-down" className="bg-home">
+      <div className="md:mt-32 mt-20 container">
         <div className="mb-8">
           <h1 className="text-center text-3xl font-semibold">
             Shop By Category
@@ -63,21 +63,21 @@ const ShopByTab = () => {
               </TabList>
             </div>
             <TabPanel>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
                   <HeroCard key={hero._id} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
                   <HeroCard key={hero._id} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>
             <TabPanel>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div data-aos="zoom-in" className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
                   <HeroCard key={hero._id} hero={hero}></HeroCard>
                 ))}

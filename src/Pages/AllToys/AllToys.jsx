@@ -22,7 +22,7 @@ fetch(`http://localhost:5000/alltoycollection/${searchText}`)
       <Helmet>
         <title>Super Hero Hub | All Toys</title>
       </Helmet>
-      <div className="py-14 alltoybg ">
+      <div className="py-14 bg-base-300 alltoybg ">
         <div className="container">
           <div className="mb-8">
             <h1 className="text-center text-3xl font-semibold">

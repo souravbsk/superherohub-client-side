@@ -73,7 +73,7 @@ const AddToy = () => {
     <Helmet>
         <title>Super Hero Hub | Add A Toy</title>
       </Helmet>
-    <div className=" bg-base-200 bg-home py-12">
+    <div className=" bg-base-300 bg-category bg-home py-12">
       <div className="mt-5  container">
         <form
           onSubmit={handleSubmitToy}

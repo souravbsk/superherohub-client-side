@@ -6,7 +6,7 @@ import { ToastContainer } from 'react-toastify';
 
 const Main = () => {
     return (
-        <div>
+        <div className='bg-layout' >
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>

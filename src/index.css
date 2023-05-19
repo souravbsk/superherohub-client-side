@@ -37,6 +37,13 @@ body {
 text-align: center;
 }
 
+.react-tabs__tab{
+background-color: white;
+margin-right: 5px;
+border-radius: 8px 8px 0  0;
+}
+
+
 .alltoybg {
     background-image: url("https://i.ibb.co/dWxWbzX/pngwing-com-14-1.png"), url("https://i.ibb.co/vqQSKcG/pngwing-com-12-1.png");
     background-repeat: no-repeat, no-repeat;
@@ -53,7 +60,7 @@ text-align: center;
 .bg-category {
     background-image: url("https://i.ibb.co/JxtCvJk/spider-man-5998998-1-1.png");
     background-repeat: no-repeat;
-    background-position: bottom left;
+    background-position: top left;
     background-size: 200px 300px;
 }
 .bg-details-card {
@@ -75,6 +82,13 @@ text-align: center;
     background-repeat: no-repeat, no-repeat;
     background-position: top left, right bottom;
     background-size: 250px 300px, 300px 400px;
+}
+
+.bg-galley {
+    background-image: url("https://i.ibb.co/ZYGNfVy/Bat-PNG-Photo-Image.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 200px 200px;
 }
 
 

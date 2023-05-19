@@ -7,15 +7,17 @@ import Swal from "sweetalert2";
 const MyToys = () => {
   const { user } = useContext(AuthContext);
   const [toys, setToys] = useState();
-
-  const url = `http://localhost:5000/usertoys?email=${user?.email}`;
+  const [sortValue,setSortValue] = useState("lth")
+console.log(sortValue);
+  const url = `http://localhost:5000/usertoys/${sortValue}/?email=${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
         setToys(data);
       });
-  }, [user]);
+  }, [user,sortValue]);
+
 
   const handleDelete = (id) => {
     Swal.fire({
@@ -34,11 +36,9 @@ const MyToys = () => {
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
-
-              const remainingData = toys.filter(toy => toy._id !== id)
-              setToys(remainingData)
+              const remainingData = toys.filter((toy) => toy._id !== id);
+              setToys(remainingData);
               Swal.fire("Deleted!", "Your Toy has been deleted.", "success");
-
             }
           });
       }
@@ -46,15 +46,20 @@ const MyToys = () => {
   };
 
   return (
-    <div className="bg-my-toy">
+    <div className="bg-my-toy bg-base-300">
       <Helmet>
-        <title>Super Hero Hub | My-Toys</title>
+        <title>Super Hero Hub | My Toys</title>
       </Helmet>
       <div className="container py-8 md:py-12">
         <div className="mb-8">
           <h1 className="text-center text-3xl font-semibold">My Toys</h1>
         </div>
+        <select onChange={(e) => setSortValue(e.target.value)} className="select select-bordered w-40 max-w-xs">
+            <option value="lth">Low to High</option>
+            <option value="htl">High to Low</option>
+          </select>
         <div className="overflow-x-auto w-full">
+         
           <table className="table w-full">
             {/* head */}
             <thead>
