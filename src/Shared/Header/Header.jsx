@@ -58,7 +58,7 @@ const Header = () => {
               </>
             )}
             <li>
-              <NavLink className="font-medium">Blogs</NavLink>
+              <NavLink to="/blog" className="font-medium">Blogs</NavLink>
             </li>
             {user ? (
               <>

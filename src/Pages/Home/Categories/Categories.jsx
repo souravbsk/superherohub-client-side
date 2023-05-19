@@ -10,7 +10,7 @@ const Categories = () => {
         <div className="card group relative overflow-hidden  bg-gray-600 shadow-2xl border-4 ">
           <figure>
             <img
-            className="md:h-[400px] group object-cover"
+            className="md:h-[400px] group"
               src="https://i.ibb.co/8Y12ngH/pngwing-com-15-1.png"
               alt="Shoes"
             />
@@ -25,7 +25,7 @@ Marvel is a renowned franchise known for its comic books and movies featuring be
         <div className="card p-0 group relative overflow-hidden  bg-gray-600 shadow-2xl border-4 ">
           <figure>
             <img
-            className="md:h-[400px] group object-cover"
+            className="md:h-[400px] group"
               src="https://i.ibb.co/9v78wfp/Star-Wars-Free-PNG.png"
               alt="Shoes"
             />
@@ -39,12 +39,14 @@ Marvel is a renowned franchise known for its comic books and movies featuring be
         </div>
         <div className="card group relative overflow-hidden  bg-gray-600 shadow-2xl border-4 ">
 
-            <img
-            className="md:h-[400px] group object-fill"
-              src="https://i.ibb.co/GP4pvM4/Justice-League-Batman-Vector-PNG.png"
+      <figure>
+      <img
+            className="md:h-[400px] group"
+              src="https://i.ibb.co/cgkJSHq/Batman-Comics-Transparent-PNG.png"
               alt="Shoes"
             />
 
+      </figure>
           <div className="card-body  text-white absolute  opacity-0 group-hover:opacity-100 transition-all duration-700  bottom-0 backdrop-blur-2xl">
             <h2 className="card-title group text-xl md:text-4xl">Justice League</h2>
             <p className="group text-sm">

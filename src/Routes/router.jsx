@@ -11,6 +11,7 @@ import PrivateRouter from "./PrivateRouter";
 import MyToys from "../Pages/MyToys/MyToys";
 import Loader from "../Shared/Loader/Loader";
 import UpdateToy from "../Pages/UpdateToy/UpdateToy";
+import Blogs from "../Pages/Blogs/Blogs";
 
 const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
                 path:"/updatetoy/:id",
                 element:<UpdateToy></UpdateToy>,
                 loader:({params}) => fetch(`https://superheros-server.vercel.app/toydetails/${params.id}`),
+            },
+            {
+                path:"/blog",
+                element:<Blogs></Blogs>
             },
             {
                 path:"/login",

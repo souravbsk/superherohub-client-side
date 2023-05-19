@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import '@smastrom/react-rating/style.css'
 import { Rating } from '@smastrom/react-rating'
+import { AuthContext } from "../../../Providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const HeroCard = ({ hero }) => {
-  const {photo,toytitle,price,ratings,_id} = hero;
+  const {user} = useContext(AuthContext);
+  const {photo,toytitle,price,ratings,_id} = hero || {};
 
+  const handleViewDetails = () => {
+    if(!user){
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'You have to log in first to view details',
+      })
+    }
+  }
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
@@ -25,7 +37,7 @@ const HeroCard = ({ hero }) => {
       readOnly
     /></div>
         <div className="card-actions mt-3">
-          <Link to={`/toy/${_id}`}><button  className="btn">View Details</button></Link>
+          <Link to={`/toy/${_id}`}><button onClick={handleViewDetails} className="btn">View Details</button></Link>
         </div>
       </div>
     </div>
