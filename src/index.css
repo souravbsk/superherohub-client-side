@@ -87,7 +87,7 @@ border-radius: 8px 8px 0  0;
 .bg-galley {
     background-image: url("https://i.ibb.co/ZYGNfVy/Bat-PNG-Photo-Image.png");
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: bottom left;
     background-size: 200px 200px;
 }
 

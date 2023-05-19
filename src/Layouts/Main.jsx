@@ -9,7 +9,9 @@ const Main = () => {
         <div className='bg-layout' >
             <Header></Header>
             <Outlet></Outlet>
+            <div className='bg-base-300 pt:mb-32 pt-12'>
             <Footer></Footer>
+            </div>
             <ToastContainer />
         </div>
     );

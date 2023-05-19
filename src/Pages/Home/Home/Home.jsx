@@ -7,6 +7,7 @@ import Categories from "../Categories/Categories";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountDown from "../CountDown/CountDown";
+import Appointment from "../Appointment/Appointment";
 const Home = () => {
   AOS.init();
 
@@ -20,6 +21,7 @@ const Home = () => {
       <Categories></Categories>
       <ShopByTab></ShopByTab>
       <Gallerys></Gallerys>
+      <Appointment></Appointment>
 
     </div>
   );
