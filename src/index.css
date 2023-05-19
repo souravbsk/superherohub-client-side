@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    @apply max-w-full w-10/12 mx-auto
+    @apply max-w-full px-3 md:px-0 md:w-10/12 mx-auto
 }
 
 .swiper-button-next,
@@ -50,6 +50,12 @@ text-align: center;
     background-position: top right;
     background-size: 200px 300px;
 }
+.bg-category {
+    background-image: url("https://i.ibb.co/JxtCvJk/spider-man-5998998-1-1.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 200px 300px;
+}
 .bg-details-card {
     background-image: url('https://i.ibb.co/8Y12ngH/pngwing-com-15-1.png');
     background-repeat: no-repeat;
@@ -75,4 +81,14 @@ text-align: center;
 .lg-react-element {
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 26px;
+}
+
+@media only screen and (max-width: 425px){
+	.lg-react-element {
+      
+        grid-template-columns: repeat(1,1fr);
+        gap: 26px;
+    }
+    
 }

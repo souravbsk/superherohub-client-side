@@ -26,7 +26,7 @@ const Gallerys = () => {
         plugins={[lgThumbnail, lgZoom]}
       >
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/NtytPWt/serge-kutuzov-meq-Vd5zwyl-I-unsplash-1-1.jpg"
         >
           <img
@@ -36,7 +36,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/gJcyv4b/banner5.jpg"
         >
           <img
@@ -46,7 +46,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/dWxWbzX/pngwing-com-14-1.png"
         >
           <img
@@ -56,7 +56,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/QKRTpQQ/pngwing-com-13-1.png"
         >
           <img
@@ -66,7 +66,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/vqQSKcG/pngwing-com-12-1.png"
         >
           <img
@@ -76,7 +76,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/jTM2cf3/ravi-palwe-EGJhk2-Gz-PMA-unsplash-1.jpg"
         >
           <img
@@ -86,7 +86,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/fqn4NJH/yogi-purnama-en7-G3h-TSj-BQ-unsplash-1.jpg"
         >
           <img
@@ -96,7 +96,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/fqn4NJH/yogi-purnama-en7-G3h-TSj-BQ-unsplash-1.jpg"
         >
           <img
@@ -106,7 +106,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/fqn4NJH/yogi-purnama-en7-G3h-TSj-BQ-unsplash-1.jpg"
         >
           <img
@@ -116,7 +116,7 @@ const Gallerys = () => {
           />
         </a>
         <a
-          className="border-4 rounded-lg"
+          className=" overflow-hidden border-4 w-full h-60 bg-gray-700 rounded-lg"
           href="https://i.ibb.co/k0TKHdY/banner4.jpg"
         >
           <img

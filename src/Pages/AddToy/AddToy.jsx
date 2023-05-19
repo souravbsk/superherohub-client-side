@@ -55,14 +55,17 @@ const AddToy = () => {
     .then(res => res.json())
     .then(data => {
       if(data.insertedId){
-        toast.success("toy insert success")
+        Swal.fire({
+          title: 'Success!',
+          text: 'Your Toy Insert Success',
+          icon: 'success',
+          confirmButtonText: 'Cool'
+        })
         form.reset()
       }
-      console.log(data);
     })    
 
 
-    console.log(newToy);
   };
 
   return (

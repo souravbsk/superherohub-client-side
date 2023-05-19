@@ -17,7 +17,6 @@ const ShopByTab = () => {
         }
       });
   }, [tabTitle]);
-  console.log(tabTitle);
 
   return (
     <div className="bg-home">
@@ -66,21 +65,21 @@ const ShopByTab = () => {
             <TabPanel>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
-                  <HeroCard key={hero} hero={hero}></HeroCard>
+                  <HeroCard key={hero._id} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>
             <TabPanel>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
-                  <HeroCard key={hero} hero={hero}></HeroCard>
+                  <HeroCard key={hero._id} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>
             <TabPanel>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {heros.map((hero) => (
-                  <HeroCard key={hero} hero={hero}></HeroCard>
+                  <HeroCard key={hero._id} hero={hero}></HeroCard>
                 ))}
               </div>
             </TabPanel>
