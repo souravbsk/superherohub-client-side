@@ -31,7 +31,7 @@ const ShopByTab = () => {
               <TabList>
                 <Tab>
                   <button
-                    className={`border-2 rounded-md py-3 px-4 ${
+                    className={`rounded-md py-3 px-4 ${
                       tabTitle === "avengers" && "btn"
                     }`}
                     onClick={() => setTabTitle("avengers")}
@@ -41,7 +41,7 @@ const ShopByTab = () => {
                 </Tab>
                 <Tab>
                   <button
-                    className={`border-2 rounded-md py-3 px-4 ${
+                    className={`rounded-md py-3 px-4 ${
                       tabTitle === "justice-league" && "btn"
                     }`}
                     onClick={() => setTabTitle("justice-league")}
@@ -51,7 +51,7 @@ const ShopByTab = () => {
                 </Tab>
                 <Tab>
                   <button
-                    className={`border-2 rounded-md py-3 px-4 ${
+                    className={`rounded-md py-3 px-4 ${
                       tabTitle === "star-wars" && "btn"
                     }`}
                     onClick={() => setTabTitle("star-wars")}

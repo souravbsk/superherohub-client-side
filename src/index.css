@@ -109,7 +109,7 @@ color: white;
 }
 
 .bg-layout{
-    background-image:  linear-gradient(to right, rgba(113, 100, 113, 0.538) , rgba(151, 171, 187, 0.349)), url('./assets//bg-shape//body-bg.webp');
+    background-image:   url('./assets//bg-shape//body-bg.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

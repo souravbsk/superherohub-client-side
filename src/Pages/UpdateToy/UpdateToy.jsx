@@ -75,7 +75,7 @@ const UpdateToy = () => {
             <div className="mt-5  container">
             <form
           onSubmit={handleToyUpdate}
-          className="bg-transparent border glass shadow-xl backdrop-blur-3xl  md:p-10 p-5 rounded-2xl md:w-8/12 mx-auto"
+          className="bg-transparent border shadow-3xl backdrop-blur-3xl  md:p-10 p-5 rounded-2xl md:w-8/12 mx-auto"
           >
           <h1 className="text-xl md:text-3xl text-white mb-5 text-center font-semibold">
            Update {toytitle}

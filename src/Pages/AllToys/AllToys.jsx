@@ -4,7 +4,6 @@ import ToysCard from "./ToysCard";
 import { Helmet } from "react-helmet-async";
 
 const AllToys = () => {
-  const allHeros = useLoaderData();
   const [toyData, setToyData] = useState([]);
   const [searchText, setSearchText] = useState("");
 
@@ -34,7 +33,7 @@ fetch(`https://superheros-server.vercel.app/alltoycollection/${searchText}`)
               <input
                 type="text"
                 placeholder="Search Toy Name"
-                className="p-2 border border-gray-300 rounded-md w-64"
+                className="p-2 border border-gray-300 bg-transparent backdrop-blur-3xl text-white rounded-md w-64"
                 onChange={(e) => setSearchText(e.target.value)}
               />
             </div>
@@ -42,7 +41,6 @@ fetch(`https://superheros-server.vercel.app/alltoycollection/${searchText}`)
               <table className="table text-center table-compact w-full">
                 <thead>
                   <tr>
-                    <th></th>
                     <th>Toy Name</th>
                     <th>Seller</th>
                     <th>Sub-category</th>
@@ -58,7 +56,6 @@ fetch(`https://superheros-server.vercel.app/alltoycollection/${searchText}`)
                 </tbody>
                 <tfoot>
                   <tr>
-                    <th></th>
                     <th>Toy Name</th>
                     <th>Seller</th>
                     <th>Sub-category</th>

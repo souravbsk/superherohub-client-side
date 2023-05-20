@@ -19,7 +19,7 @@ const HeroCard = ({ hero }) => {
     }
   }
   return (
-    <div className="card text-white glass shadow-xl">
+    <div className="card text-white backdrop-blur-3xl border border-purple-500 shadow-xl">
       <figure className="px-10  pt-10">
         <img
         

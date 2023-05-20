@@ -20,8 +20,13 @@ console.log(sortValue);
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-        setToys(data)
+        if(!data.error){
+
+          setToys(data)
+        }
+        else{
+          logOut()
+        }
       });
   }, [user,sortValue]);
 
