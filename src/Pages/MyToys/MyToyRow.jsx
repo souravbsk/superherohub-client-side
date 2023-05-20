@@ -15,7 +15,7 @@ const MyToyRow = ({ toy,handleDelete }) => {
     quantity,
     details,
     _id
-  } = toy;
+  } = toy || {};
 
 
 

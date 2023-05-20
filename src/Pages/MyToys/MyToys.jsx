@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 const MyToys = () => {
   const { user,logOut } = useContext(AuthContext);
-  const [toys, setToys] = useState();
+  const [toys, setToys] = useState([]);
   const [sortValue,setSortValue] = useState("lth")
 console.log(sortValue);
   // const url = `https://superheros-server.vercel.app/usertoys/${sortValue}/?email=${user?.email}`;
@@ -20,12 +20,8 @@ console.log(sortValue);
     })
       .then((res) => res.json())
       .then((data) => {
-        if(!data.error) {
-          setToys(data);
-        }
-        else{
-          logOut()
-        }
+        console.log(data);
+        setToys(data)
       });
   }, [user,sortValue]);
 
