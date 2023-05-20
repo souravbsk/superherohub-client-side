@@ -8,8 +8,6 @@ const MyToys = () => {
   const { user,logOut } = useContext(AuthContext);
   const [toys, setToys] = useState([]);
   const [sortValue,setSortValue] = useState("lth")
-console.log(sortValue);
-  // const url = `https://superheros-server.vercel.app/usertoys/${sortValue}/?email=${user?.email}`;
   const url = `https://superheros-server.vercel.app/usertoys/${sortValue}/?email=${user?.email}`;
   useEffect(() => {
     fetch(url,{
@@ -29,6 +27,15 @@ console.log(sortValue);
         }
       });
   }, [user,sortValue]);
+
+
+  // useEffect(() => {
+  //   fetch(`http://localhost:5000/usertoys/${sortValue}/?email=${user?.email}`)
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     setToys(data)
+  //   })
+  // },[sortValue])
 
 
   const handleDelete = (id) => {
