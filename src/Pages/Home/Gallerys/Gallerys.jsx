@@ -100,22 +100,22 @@ const Gallerys = () => {
           </a>
           <a
             className=" overflow-hidden  group  duration-300 shadow-xl w-full h-60 glass rounded-lg"
-            href="https://i.ibb.co/fqn4NJH/yogi-purnama-en7-G3h-TSj-BQ-unsplash-1.jpg"
+            href="https://i.ibb.co/m8rDBvD/Justice-League-Aquaman-Transparent-PNG.png"
           >
             <img
               className="w-full h-60 backdrop-blur-2xl  group-hover:scale-125"
               alt="img8"
-              src="https://i.ibb.co/fqn4NJH/yogi-purnama-en7-G3h-TSj-BQ-unsplash-1.jpg"
+              src="https://i.ibb.co/m8rDBvD/Justice-League-Aquaman-Transparent-PNG.png"
             />
           </a>
           <a
             className=" overflow-hidden  group  duration-300 shadow-xl w-full h-60 glass rounded-lg"
-            href="https://i.ibb.co/fqn4NJH/yogi-purnama-en7-G3h-TSj-BQ-unsplash-1.jpg"
+            href="https://i.ibb.co/44Xg5W8/d26ba2-ca9031ebc4ad495c996b5e28cb3f900d-mv2-1.png"
           >
             <img
               className="w-full h-60 backdrop-blur-2xl  group-hover:scale-125"
               alt="img9"
-              src="https://i.ibb.co/fqn4NJH/yogi-purnama-en7-G3h-TSj-BQ-unsplash-1.jpg"
+              src="https://i.ibb.co/44Xg5W8/d26ba2-ca9031ebc4ad495c996b5e28cb3f900d-mv2-1.png"
             />
           </a>
           <a

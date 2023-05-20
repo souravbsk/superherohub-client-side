@@ -11,7 +11,7 @@ const Categories = () => {
       </div>
       <div className="grid container grid-cols-1 md:grid-cols-3 gap-8">
         <Tilt>
-          <div className="card group relative overflow-hidden  bg-transparent glass shadow-2xl border-4 ">
+          <div className="card rounded-3xl  rounded-bl-none rounded-tr-none group relative overflow-hidden  bg-transparent glass shadow-2xl border-4 ">
             <figure>
               <img
                 className="md:h-[400px] scale-75 group"
@@ -31,7 +31,7 @@ const Categories = () => {
           </div>
         </Tilt>
         <Tilt>
-          <div className="card p-0 group relative overflow-hidden  bg-transparent glass shadow-2xl border-4 ">
+          <div className="card rounded-3xl  rounded-bl-none rounded-tr-none p-0 group relative overflow-hidden  bg-transparent glass shadow-2xl border-4 ">
             <figure>
               <img
                 className="md:h-[400px] scale-75 group"
@@ -53,7 +53,7 @@ const Categories = () => {
           </div>
         </Tilt>
         <Tilt>
-          <div className="card group relative overflow-hidden  bg-transparent glass shadow-2xl border-4 ">
+          <div className="card rounded-3xl  rounded-bl-none rounded-tr-none group relative overflow-hidden  bg-transparent glass shadow-2xl border-4 ">
             <figure>
               <img
                 className="md:h-[400px] scale-75 group"

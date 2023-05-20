@@ -25,7 +25,7 @@ const HeroCard = ({ hero }) => {
         
           src={photo}
           alt="Shoes"
-          className="rounded-xl h-52 backdrop-blur-2xl object-fill w-full"
+          className="rounded-xl h-52 bg-white object-fill w-full"
         />
       </figure>
       <div className="card-body ">
