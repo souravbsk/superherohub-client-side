@@ -5,16 +5,27 @@ import MyToyRow from "./MyToyRow";
 import Swal from "sweetalert2";
 
 const MyToys = () => {
-  const { user } = useContext(AuthContext);
+  const { user,logOut } = useContext(AuthContext);
   const [toys, setToys] = useState();
   const [sortValue,setSortValue] = useState("lth")
 console.log(sortValue);
+  // const url = `https://superheros-server.vercel.app/usertoys/${sortValue}/?email=${user?.email}`;
   const url = `https://superheros-server.vercel.app/usertoys/${sortValue}/?email=${user?.email}`;
   useEffect(() => {
-    fetch(url)
+    fetch(url,{
+      method:"GET",
+      headers:{
+        authorization: `Bearer ${localStorage.getItem('superHeroToken')}`
+      }
+    })
       .then((res) => res.json())
       .then((data) => {
-        setToys(data);
+        if(!data.error) {
+          setToys(data);
+        }
+        else{
+          logOut()
+        }
       });
   }, [user,sortValue]);
 

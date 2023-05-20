@@ -27,7 +27,7 @@ const DetailsCard = () => {
         <div className=" p-5 md:p-10 rounded-3xl border bg-details-card backdrop-blur-3xl bg-transparent card-side bg-base-100 shadow-2xl">
           <figure className="backdrop-blur-3xl">
           <img
-            className="w-full md:h-[500px] rounded-3xl"
+            className="w-full md:h-[500px] object-fill rounded-3xl"
             src={photo}
             alt="Movie"
           />
