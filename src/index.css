@@ -16,12 +16,12 @@ body {
     width: 50px !important;
     height: 50px !important;
     border-radius: 50%;
-    background-color: azure;
+    background-color: #494E65;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-    color: black !important;
+    color: white !important;
     font-size: 21px !important;
     font-weight: 900;
 }
@@ -38,6 +38,7 @@ text-align: center;
 gap: 2px;
 flex-direction: row;
 display: flex;
+border:none !important;
 justify-content:  center;
 align-items: center;
 }
@@ -104,12 +105,12 @@ color: white;
 
 .lg-react-element {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 26px;
 }
 
 .bg-layout{
-    background-image:   url('./assets//bg-shape//body-bg.webp');
+    background: linear-gradient( rgba(2, 19, 43, 0.616) 100%, rgba(0, 0, 0, 0.411)100%),   url('./assets//bg-shape//body-bg.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
