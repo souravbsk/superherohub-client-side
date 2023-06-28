@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header className="border-b-2 shadow-2xl">
+    <header className="border-b border-slate-400 shadow-2xl">
       <div className="navbar flex-col  md:flex-row  md:py-9 container ">
         <div className="flex-1 w-full">
           <div className="flex text-white justify-between w-full">
